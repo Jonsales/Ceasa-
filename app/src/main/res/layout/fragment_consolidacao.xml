@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.john.ceasa.Fragments.ConsolidacaoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+        <ListView
+            android:id="@+id/list_consolidacao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+                <LinearLayout
+                    android:visibility="invisible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="0.85">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="0.15"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border"
+                    android:weightSum="1">
+                    <TextView
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/total_recebido"
+                        android:textSize="21sp"/>
+                    <TextView
+                        android:id="@+id/total_recebido"
+                        android:layout_width="0sp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5"
+                        android:text="R$ 300,00"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="21sp"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+</FrameLayout>

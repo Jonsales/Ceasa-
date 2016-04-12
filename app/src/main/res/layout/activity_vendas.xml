@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.john.ceasa.VendasActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbarvendas"></include>
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/viewpagertab_vendas"
+            app:pstsShouldExpand="true"
+            app:backgroundTint="@color/blue"
+            app:backgroundTintMode="screen"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:paddingTop="2dp"
+            app:pstsDividerColor="@color/white"
+            app:pstsIndicatorColor="@color/orange"
+            app:pstsUnderlineColor="@color/orange"
+            app:pstsTabPaddingLeftRight="2dp"
+            app:paddingEnd="2dp"
+            app:paddingStart="5dp"
+            app:pstsUnderlineHeight="0dp"
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager_vendas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewpagertab_vendas"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

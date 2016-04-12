@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar_adicionar_cliente"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+
+    app:popupTheme="@style/Widget.AppCompat.Light.ActionBar"
+    tools:ignore="UnusedAttribute">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_gravity="left"
+                    android:gravity="left">
+
+        <TextView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_drawer"
+            android:text="X"
+            android:onClick="Xclick"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="10sp"/>
+
+        <TextView
+            android:id="@+id/textToolbar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:paddingLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_activity_cadastrar_cliente"/>
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>
